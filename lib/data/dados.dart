@@ -74,77 +74,76 @@ List<Story> stories = [
       urlImage: "https://source.unsplash.com/DOb-2jd0sbc/800x600"),
 ];
 
-/*
+
 /* Lista de postagens */
-List<Postagem> postagens = [
-  Postagem(
-      user: usersOnline[0],
-      descricao: "Passeio muito legal no final de semana",
-      tempoAtras: "20m",
+List<Post> posts = [
+  Post(user: usersOnline[0],
+      description: "Passeio muito legal no final de semana",
+      lastTime: "20m",
       urlImage: "https://source.unsplash.com/DOb-2jd0sbc/800x600",
-      curtidas: 30,
-      comentarios: 3,
-      compartilhamentos: 5),
-  Postagem(
+      likes: 30,
+      countCometary: 3,
+      shared: 5),
+  Post(
       user: usersOnline[1],
-      descricao: "Quero compartilhar com você algo que aconteceu...",
-      tempoAtras: "40m",
+      description: "Quero compartilhar com você algo que aconteceu...",
+      lastTime: "40m",
       urlImage: "https://source.unsplash.com/G0H58Z5aPog/800x600",
-      curtidas: 30,
-      comentarios: 3,
-      compartilhamentos: 5),
-  Postagem(
+      likes: 30,
+      countCometary: 3,
+      shared: 5),
+  Post(
       user: usersOnline[2],
-      descricao: "Não recomendo esse lugar, não fomos bem atendidos",
-      tempoAtras: "55m",
+      description: "Não recomendo esse lugar, não fomos bem atendidos",
+      lastTime: "55m",
       urlImage: "https://source.unsplash.com/1a_u4n02YNo/800x600",
-      curtidas: 30,
-      comentarios: 3,
-      compartilhamentos: 5),
-  Postagem(
+      likes: 30,
+      countCometary: 3,
+      shared: 5),
+  Post(
       user: usersOnline[3],
-      descricao:
+      description:
           "Não importa o que você sabe, mas o que faz com o que você sabe!",
-      tempoAtras: "1h",
+      lastTime: "1h",
       urlImage: "https://source.unsplash.com/sfL_QOnmy00/800x600",
-      curtidas: 30,
-      comentarios: 3,
-      compartilhamentos: 5),
-  Postagem(
+      likes: 30,
+      countCometary: 3,
+      shared: 5),
+  Post(
       user: usersOnline[4],
-      descricao: "Preciso de indicações de eletricista, meu chuveiro pifou :(",
-      tempoAtras: "2h",
+      description: "Preciso de indicações de eletricista, meu chuveiro pifou :(",
+      lastTime: "2h",
       urlImage: "https://source.unsplash.com/_tWMmC9CQXQ/800x600",
-      curtidas: 30,
-      comentarios: 3,
-      compartilhamentos: 5),
-  Postagem(
+      likes: 30,
+      countCometary: 3,
+      shared: 5),
+  Post(
       user: usersOnline[5],
-      descricao: "Que chuva maravilhosa!",
-      tempoAtras: "2d",
+      description: "Que chuva maravilhosa!",
+      lastTime: "2d",
       urlImage: "https://source.unsplash.com/a4wUKaaMGWQ/800x600",
-      curtidas: 30,
-      comentarios: 3,
-      compartilhamentos: 5),
-  Postagem(
+      likes: 30,
+      countCometary: 3,
+      shared: 5),
+  Post(
       user: usersOnline[6],
-      descricao: "Um dia mais que especial, nos divertimos bastante ;)",
-      tempoAtras: "3d",
+      description: "Um dia mais que especial, nos divertimos bastante ;)",
+      lastTime: "3d",
       urlImage: "https://source.unsplash.com/YS1OOmHAFD0/800x600",
-      curtidas: 100,
-      comentarios: 30,
-      compartilhamentos: 3),
-  Postagem(
+      likes: 100,
+      countCometary: 30,
+      shared: 3),
+  Post(
       user: usersOnline[7],
-      descricao: "VOCÊ É DO TAMANHO DOS SEUS SONHOS! Lute, persista, "
+      description: "VOCÊ É DO TAMANHO DOS SEUS SONHOS! Lute, persista, "
           "insista, corra atrás, passe algumas noites sem dormir direito, "
           "mas nunca desista de seus sonhos, acredite que é capaz, se olhe "
           "no espelho e diga pra você: VOCÊ TEM POTENCIAL! "
           "Ninguém além de você mesmo pode torná-lo real.",
-      tempoAtras: "3d",
+      lastTime: "3d",
       urlImage: "https://source.unsplash.com/Ng2Hg1YMMuU/800x600",
-      curtidas: 230,
-      comentarios: 25,
-      compartilhamentos: 3),
+      likes: 230,
+      countCometary: 25,
+      shared: 3),
 ];
-*/
+

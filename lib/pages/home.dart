@@ -1,6 +1,7 @@
 import 'package:facebook_flutter/components/area_posts.dart';
 import 'package:facebook_flutter/components/area_story.dart';
 import 'package:facebook_flutter/components/button_circle.dart';
+import 'package:facebook_flutter/components/card_post.dart';
 import 'package:facebook_flutter/data/dados.dart';
 import 'package:facebook_flutter/utils/pallet_colors.dart';
 import 'package:flutter/material.dart';
@@ -59,12 +60,15 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          SliverToBoxAdapter(
-            child: Container(
-              height: 2000,
-              color: Colors.white,
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                final post = posts[index];
+                return CardPosts(post: post);
+              },
+              childCount: posts.length,
             ),
-          )
+          ),
         ],
       ),
     );
