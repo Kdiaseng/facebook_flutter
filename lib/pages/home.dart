@@ -1,4 +1,5 @@
 import 'package:facebook_flutter/components/area_posts.dart';
+import 'package:facebook_flutter/components/area_story.dart';
 import 'package:facebook_flutter/components/button_circle.dart';
 import 'package:facebook_flutter/data/dados.dart';
 import 'package:facebook_flutter/utils/pallet_colors.dart';
@@ -44,8 +45,19 @@ class _HomeState extends State<Home> {
               )
             ],
           ),
-           SliverToBoxAdapter(
-            child: AreaPosts(user: userAtual,),
+          SliverToBoxAdapter(
+            child: AreaPosts(
+              user: userCurrent,
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(0, 10, 0, 5),
+            sliver: SliverToBoxAdapter(
+              child: AreaStory(
+                user: userCurrent,
+                stories: stories,
+              ),
+            ),
           ),
           SliverToBoxAdapter(
             child: Container(

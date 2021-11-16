@@ -33,15 +33,17 @@ class AreaPosts extends StatelessWidget {
             height: 40,
             child: Row(
               children: [
-                TextButton.icon(
-                  icon: const Icon(
-                    Icons.videocam,
-                    color: Colors.red,
-                  ),
-                  onPressed: () {},
-                  label: const Text(
-                    'Ao vivo',
-                    style: TextStyle(color: Colors.black),
+                Expanded(
+                  child: TextButton.icon(
+                    icon: const Icon(
+                      Icons.videocam,
+                      color: Colors.red,
+                    ),
+                    onPressed: () {},
+                    label: const Text(
+                      'Ao vivo',
+                      style: TextStyle(color: Colors.black),
+                    ),
                   ),
                 ),
                 const VerticalDivider(width: 8),

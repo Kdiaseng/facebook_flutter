@@ -1,2 +1,2 @@
 export 'user.dart';
-export 'history.dart';
+export 'story.dart';
