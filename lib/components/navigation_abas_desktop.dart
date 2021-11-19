@@ -4,6 +4,9 @@ import 'package:facebook_flutter/components/navegacao_abas.dart';
 import 'package:facebook_flutter/models/user.dart';
 import 'package:facebook_flutter/utils/pallet_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
+
+import 'button_circle.dart';
 
 class NavigationAbasDesktop extends StatelessWidget {
   final List<IconData> icones;
@@ -34,7 +37,6 @@ class NavigationAbasDesktop extends StatelessWidget {
         ],
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           const Expanded(
             child: Text(
@@ -54,14 +56,26 @@ class NavigationAbasDesktop extends StatelessWidget {
           ),
           Expanded(
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 ButtonImageProfile(
                   user: user,
                   onTap: () {},
                 ),
+                ButtonCircle(
+                  icon: Icons.search,
+                  iconSize: 30,
+                  onPressed: () {},
+                ),
+                ButtonCircle(
+                  icon: LineIcons.facebookMessenger,
+                  iconSize: 30,
+                  onPressed: () {},
+                )
               ],
             ),
-          )
+          ),
+
         ],
       ),
     );

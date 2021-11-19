@@ -17,12 +17,22 @@ class ButtonImageProfile extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          ImageProfile(imageUrl: user.urlImage,isVisible: false,),
-          const SizedBox(width: 8,),
-          Text(user.name, style: const TextStyle(
-            fontSize: 16
-          ),)
+          ImageProfile(
+            imageUrl: user.urlImage,
+            isVisible: false,
+          ),
+          const SizedBox(
+            width: 8,
+          ),
+          Flexible(
+            child: Text(
+              user.name,
+              style: const TextStyle(fontSize: 16),
+              overflow: TextOverflow.ellipsis,
+            ),
+          )
         ],
       ),
     );
